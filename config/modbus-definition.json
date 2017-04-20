@@ -22,7 +22,7 @@
         "equation": "x - 2",
         "description": "x - 2°C Korrektur Leitungswiderstand"
       }
-    },
+    }
   },
   "output_registers": {
     "PSOP": {
