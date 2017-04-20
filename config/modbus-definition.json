@@ -20,7 +20,7 @@
       "factor": 0.1,
       "error_correction": {
         "equation": "x - 2",
-        "description": "x - (8 Ohm * 0.25 °C/Ohm) durch Leitungswiderstand"
+        "description": "x - 2°C Korrektur Leitungswiderstand"
       }
     },
   },
