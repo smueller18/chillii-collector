@@ -1,0 +1,13 @@
+{
+  "namespace": "hska.stcs",
+  "name": "chillii-collector-key",
+  "type": "record",
+  "doc": "Chillii System Controller",
+  "fields": [
+    {
+      "name": "timestamp",
+      "type": "long",
+      "logicalType": "timestamp-millis"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "discrete_inputs": {
+    "CC_1": {
+      "address": 0,
+      "description": "Freigabe Verbraucherkreis 1"
+    }
+  },
+  "discrete_outputs": {
+    "CCH_1": {
+      "address": 2,
+      "description": "Anforderung Chiller"
+    }
+  },
+  "input_registers": {
+    "TSOPO": {
+      "address": 5,
+      "description": "Temperatur Solaranlage Austritt",
+      "type": "int16",
+      "unit": "°C",
+      "factor": 0.1,
+      "error_correction": {
+        "equation": "x - 2",
+        "description": "x - (8 Ohm * 0.25 °C/Ohm) durch Leitungswiderstand"
+      }
+    },
+  },
+  "output_registers": {
+    "PSOP": {
+      "address": 0,
+      "description": "Pumpe Solarkreis Primär",
+      "type": "int16",
+      "unit": "%",
+      "factor": 1
+    }
+  }
+}

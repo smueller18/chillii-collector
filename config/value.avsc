@@ -1,0 +1,24 @@
+{
+  "namespace": "hska.stcs",
+  "name": "chillii_collector_value",
+  "type": "record",
+  "doc": "Chillii System Controller",
+  "fields": [
+    {
+      "name": "CC_1",
+      "type": "boolean"
+    },
+    {
+      "name": "CCH_1",
+      "type": "boolean"
+    },
+    {
+      "name": "PSOP",
+      "type": "long"
+    },
+    {
+      "name": "TSOPO",
+      "type": "float"
+    }
+  ]
+}
