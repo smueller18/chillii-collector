@@ -26,13 +26,12 @@ TOPIC = os.getenv("TOPIC", "stcs.chillii")
 LOGGING_LEVEL = os.getenv("LOGGING_LEVEL", "INFO")
 logging_format = "%(levelname)8s %(asctime)s %(name)s [%(filename)s:%(lineno)s - %(funcName)s() ] %(message)s"
 
-modbus_definition_file = __dirname__ + "/config/modbus-definition.json"
-key_schema = __dirname__ + "/config/key.avsc"
-value_schema = __dirname__ + "/config/value.avsc"
-
 logging.basicConfig(level=logging.getLevelName(LOGGING_LEVEL), format=logging_format)
 logger = logging.getLogger('collector')
 
+modbus_definition_file = __dirname__ + "/config/modbus-definition.json"
+key_schema = __dirname__ + "/config/key.avsc"
+value_schema = __dirname__ + "/config/value.avsc"
 
 modbus_reader = ModbusReader(MODBUS_HOST, MODBUS_PORT, MODBUS_UNIT, modbus_definition_file, float_low_byte_first=True)
 
