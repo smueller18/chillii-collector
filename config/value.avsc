@@ -5,6 +5,10 @@
   "doc": "Chillii System Controller",
   "fields": [
     {
+      "name": "A_IN_1",
+      "type": "float"
+    },
+    {
       "name": "CC_1",
       "type": "boolean"
     },
@@ -15,6 +19,10 @@
     {
       "name": "PSOP",
       "type": "long"
+    },
+    {
+      "name": "TSOC_1_NTC",
+      "type": "float"
     },
     {
       "name": "TSOPO",
