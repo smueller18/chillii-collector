@@ -12,6 +12,13 @@
     }
   },
   "input_registers": {
+    "TSOC_1_NTC": {
+      "address": 0,
+      "description": "Temperatur Kollektor 1",
+      "type": "int16",
+      "unit": "°C",
+      "factor": 0.1
+    },
     "TSOPO": {
       "address": 5,
       "description": "Temperatur Solaranlage Austritt",
@@ -22,6 +29,13 @@
         "equation": "x - 2",
         "description": "x - 2°C Korrektur Leitungswiderstand"
       }
+    },
+    "A_IN_1": {
+      "address": 44,
+      "description": "Volumenstrom Kältemaschine HT Seite",
+      "type": "float",
+      "unit": "l/min",
+      "factor": 1
     }
   },
   "output_registers": {
