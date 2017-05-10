@@ -39,7 +39,7 @@ modbus_reader = ModbusReader(MODBUS_HOST, MODBUS_PORT, MODBUS_UNIT, modbus_defin
 def get_data():
     try:
         return {
-            'key': {'timestamp': time.time() * 1000},
+            'key': {'timestamp': int(time.time() * 1000)},
             'value': modbus_reader.read_all_values()
         }
 
