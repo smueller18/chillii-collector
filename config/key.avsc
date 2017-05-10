@@ -1,6 +1,6 @@
 {
   "namespace": "hska.stcs",
-  "name": "chillii-collector-key",
+  "name": "chillii_collector_key",
   "type": "record",
   "doc": "Chillii System Controller",
   "fields": [
